@@ -22,9 +22,19 @@
             <h3>Agregar Alumno</h3>
             <input type="text" id="nombre" placeholder="Nombre" required>
             <input type="text" id="apellido" placeholder="Apellido" required>
-            <input type="number" id="cantclases" placeholder="Cantidad de clases" required>
-            <input type="number" id="valor" placeholder="Valor de la cuota" required>
-            <button type="submit">Agregar</button>
+            <select id="cantclases" required>
+                <option value="" disabled selected>Cantidad de clases</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+            <select id="valor" required>
+                <option value="" disabled selected>Cantidad de clases</option>
+                <option value="20000">20,0000</option>
+                <option value="30000">30,000</option>
+                <option value="4">44,000</option>
+            </select>
++            <button type="submit">Agregar</button>
         </form>
         <div>
             <h3>Filtrar Alumnos</h3>
