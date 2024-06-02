@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PILATES FIT</title>
+    <link rel="shortcut icon" href="/img/Pilates Fit.png">
+    <link rel="stylesheet" href="/css/estilos.css">
+
+</head>
+<header>
+    <nav class="navbar navbar-expand-sm ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="/img/Pilates Fit.png" alt="Avatar Logo" style="width:100px;" class="rounded-pill">  </a>
+      </nav>
+</header>
+<main>
+    <h1>Pilates FIT</h1>
+        <h2>Gestión de Alumnos</h2>
+        <form id="agregar-alumno-form">
+            <h3>Agregar Alumno</h3>
+            <input type="text" id="nombre" placeholder="Nombre" required>
+            <input type="text" id="apellido" placeholder="Apellido" required>
+            <input type="number" id="cantclases" placeholder="Cantidad de clases" required>
+            <input type="number" id="valor" placeholder="Valor de la cuota" required>
+            <button type="submit">Agregar</button>
+        </form>
+        <div>
+            <h3>Filtrar Alumnos</h3>
+            <input type="text" id="filtro-nombre" placeholder="Nombre y Apellido">
+            <button id="filtrar-alumno">Filtrar</button>
+        </div>
+        <div>
+            <h3>Mostrar Alumnos</h3>       
+            <button id="mostrar-alumnos">Mostrar Todos los Alumnos</button>
+</div>
+<div>
+    <h3>Calcular Cuotas</h3>       
+    <button id="calcular-cuotas">Calcular Promedio de Cuotas</button>
+</div>
+
+        <div id="resultados"></div>
+        <div id="promedio"></div>
+        <div id="filtrados"></div>
+</main>
+    <script src="main.js"></script>
+</body>
+</html>
