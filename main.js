@@ -25,7 +25,7 @@ function filtrarAlumnos() {
     const palabraClave = document.getElementById("filtro-nombre").value.toUpperCase().trim()
     const resultadosDiv = document.getElementById("filtrados")
 
-    resultadosDiv.innerHTML = ""
+    resultadosDiv.innerHTML = "" //limpiar contenido
     if (palabraClave === "") {
         const msg = document.createElement("p")
         msg.textContent = "Debe ingresar un nombre y apellido válido"
@@ -50,6 +50,9 @@ function agregarAlumno(event) {
     const cantclases = parseInt(document.getElementById("cantclases").value.trim());
     const valor = parseFloat(document.getElementById("valor").value.trim());
     const resultadosDiv = document.getElementById ("resultados")
+    
+    resultadosDiv.innerHTML = ""
+
     if (isNaN(valor) || isNaN(cantclases) || nombre === "" || apellido === "") {
         const msg = document.createElement ("p")
         msg.textContent = "ingrese datos correctos"
@@ -98,7 +101,3 @@ document.getElementById('calcular-cuotas').addEventListener('click', calcularPro
 
 document.getElementById('mostrar-alumnos').addEventListener('click', mostrarAlumnos);
 
-// Mostrar alumnos al cargar la página
-document.addEventListener('DOMContentLoaded', function() {
-    mostrarAlumnos()
-})
