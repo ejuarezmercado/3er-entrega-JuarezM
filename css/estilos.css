@@ -1,33 +1,49 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
+body {
+    background-color: #d4e7db;
+    font-family: Arial, sans-serif;
+}
+
 header {
-    background-color:#fbfbf3 ;
+    background-color: #fbfbf3;
     display: flex;
     align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-bottom: 2px solid #ccc;
+}
 
+h1 {
+    font-size: 2.5em;
+    color: #333;
 }
-body {
-background-color: #d4e7db;
+
+.container {
+    margin-top: 20px;
 }
-main {
-    text-align:left;   
-    color:#646f6c;
+
+h2, h3 {
+    color: #646f6c;
+    margin-bottom: 15px;
 }
-h1{
-    text-align: center;
-    padding: 1%;
+
+.form-group {
+    margin-bottom: 15px;
 }
-h2{
-    padding: 1%;
+
+.btn {
+    margin-top: 10px;
 }
-h3{
-    padding: 1%;
+
+#resultados, #promedio, #filtrados, #cantidad-alumnos {
+    margin-top: 20px;
 }
-h4{
-    padding: 1%;
-}
-h5{
-    padding: 1%;
+
+.table {
+    margin-top: 20px;
 }
